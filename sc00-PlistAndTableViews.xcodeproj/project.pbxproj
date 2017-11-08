@@ -14,8 +14,8 @@
 		69E786521FB12ED100C70758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E786511FB12ED100C70758 /* main.m */; };
 		69E7865A1FB1300A00C70758 /* StatesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E786591FB1300A00C70758 /* StatesTableViewController.m */; };
 		69E7865C1FB1321C00C70758 /* names.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69E7865B1FB1321C00C70758 /* names.plist */; };
-		69E786611FB1470300C70758 /* USStates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69E786601FB1470200C70758 /* USStates.plist */; };
 		69E786641FB242E500C70758 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E786631FB242E500C70758 /* TableViewCell.m */; };
+		E55380F71FB38FA100D9B446 /* USStates.plist in Resources */ = {isa = PBXBuildFile; fileRef = E55380F61FB38FA100D9B446 /* USStates.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +30,9 @@
 		69E786581FB1300A00C70758 /* StatesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatesTableViewController.h; sourceTree = "<group>"; };
 		69E786591FB1300A00C70758 /* StatesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatesTableViewController.m; sourceTree = "<group>"; };
 		69E7865B1FB1321C00C70758 /* names.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = names.plist; sourceTree = "<group>"; };
-		69E786601FB1470200C70758 /* USStates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = USStates.plist; path = ../../../../../../../../Downloads/USStates.plist; sourceTree = "<group>"; };
 		69E786621FB242E500C70758 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		69E786631FB242E500C70758 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		E55380F61FB38FA100D9B446 /* USStates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USStates.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 		69E7865D1FB1329300C70758 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E55380F61FB38FA100D9B446 /* USStates.plist */,
 				69E7865B1FB1321C00C70758 /* names.plist */,
-				69E786601FB1470200C70758 /* USStates.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,10 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E786611FB1470300C70758 /* USStates.plist in Resources */,
 				69E7864F1FB12ED100C70758 /* LaunchScreen.storyboard in Resources */,
 				69E7865C1FB1321C00C70758 /* names.plist in Resources */,
 				69E7864C1FB12ED100C70758 /* Assets.xcassets in Resources */,
+				E55380F71FB38FA100D9B446 /* USStates.plist in Resources */,
 				69E7864A1FB12ED100C70758 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "sc00-PlistAndTableViews/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.mdc.sc00-PlistAndTableViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "sc00-PlistAndTableViews/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.mdc.sc00-PlistAndTableViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
