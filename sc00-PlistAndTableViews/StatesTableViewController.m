@@ -70,10 +70,12 @@
     cell.stateCapital.text = [NSString stringWithFormat:@"Capital: %@",[[keyValues objectAtIndex:indexPath.row] objectForKey:@"capitalCity"]];
     
     cell.stateFlagImg.image = [UIImage imageNamed:[[keyValues objectAtIndex:indexPath.row] objectForKey:@"flag"]];
+    
     NSNumberFormatter *formatter = [NSNumberFormatter new];
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
     NSString *formatted = [formatter stringFromNumber:[[keyValues objectAtIndex:indexPath.row] objectForKey:@"population"]];
     cell.statePopulation.text = [NSString stringWithFormat:@"Population: %@",formatted];
+    
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateFormat:@"MM-dd-yyyy"];
     NSString *dateString = [df stringFromDate:[[keyValues objectAtIndex:indexPath.row] objectForKey:@"yearJoinedUnion"]];
